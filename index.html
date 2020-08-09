@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mainContainer">
+        <h2 style="font-weight: 300; letter-spacing: 5px; ">QUIZ APPLICATION</h2>
+        <hr class="pb-1 bg-dark w-25 mt-4">
+
+        <div class="container mt-5 container1" style="padding: 15px;" id="container1">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">Q.1: HTML stands for?</h5>
+            <div class="container p-4 ques1Container">
+                <div class="input1">
+                    <input type="radio" name="firstQuestion" id="q1_opt1">
+                        <span style="margin-left: 3px;">
+                            Hyper Text Markup Language
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="firstQuestion" id="q1_opt2">
+                        <span style="margin-left: 3px;">
+                            High Text Meaning Language
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="firstQuestion" id="q1_opt3">
+                        <span style="margin-left: 3px;">
+                            High Template Markup Language
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="firstQuestion" id="q1_opt4">
+                        <span style="margin-left: 3px;">
+                            Hyper Test Meaning Language
+                        </span>
+                    </input>
+                </div>    
+            </div>
+            <div class="container mt-5 text-right">
+                <button type="button" class="btn btn-outline-light" onclick="ques1Func()">Next</button>
+            </div>
+        </div>
+        <div class="container mt-5 container2" style="padding: 15px; display: none;" id="container2">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">Q.2: PHP stands for?</h5>
+            <div class="container p-4 ques2Container">
+                <div class="input1">
+                    <input type="radio" name="secondQuestion" id="q2_opt1">
+                        <span style="margin-left: 3px;">
+                            Personal Home Page
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="secondQuestion" id="q2_opt2">
+                        <span style="margin-left: 3px;">
+                            HyperText PreProcessor
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="secondQuestion" id="q2_opt3">
+                        <span style="margin-left: 3px;">
+                            Personal HyperText Processor
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="secondQuestion" id="q2_opt4">
+                        <span style="margin-left: 3px;">
+                            HyperText Processor
+                        </span>
+                    </input>
+                </div>    
+            </div>
+            <div class="container mt-5 text-right">
+                <button type="button" class="btn btn-outline-light" onclick="ques2Func()">Next</button>
+            </div>
+        </div>
+        <div class="container mt-5 container3" style="padding: 15px; display: none;" id="container3">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">Q.3: Who Introduced Javascript?</h5>
+            <div class="container p-4 ques3Container">
+                <div class="input1">
+                    <input type="radio" name="thirdQuestion" id="q3_opt1">
+                        <span style="margin-left: 3px;">
+                            Brenn Lee
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="thirdQuestion" id="q3_opt2">
+                        <span style="margin-left: 3px;">
+                            Brendan Eich
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="thirdQuestion" id="q3_opt3">
+                        <span style="margin-left: 3px;">
+                            John Lee
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="thirdQuestion" id="q3_opt4">
+                        <span style="margin-left: 3px;">
+                            Abert king
+                        </span>
+                    </input>
+                </div>    
+            </div>
+            <div class="container mt-5 text-right">
+                <button type="button" class="btn btn-outline-light" onclick="ques3Func()">Next</button>
+            </div>
+        </div>
+        <div class="container mt-5 container4" style="padding: 15px; display: none;" id="container4">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">Q.4: In Which Year CSS Were Introduced</h5>
+            <div class="container p-4 ques4Container">
+                <div class="input1">
+                    <input type="radio" name="fourthQuestion" id="q4_opt1">
+                        <span style="margin-left: 3px;">
+                            Dec, 1995
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fourthQuestion" id="q4_opt2">
+                        <span style="margin-left: 3px;">
+                            Nov, 1996
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fourthQuestion" id="q4_opt3">
+                        <span style="margin-left: 3px;">
+                            Dec, 1996
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fourthQuestion" id="q4_opt4">
+                        <span style="margin-left: 3px;">
+                            Jan, 1997
+                        </span>
+                    </input>
+                </div>    
+            </div>
+            <div class="container mt-5 text-right">
+                <button type="button" class="btn btn-outline-light" onclick="ques4Func()">Next</button>
+            </div>
+        </div>
+        <div class="container mt-5 container5" style="padding: 15px; display: none;" id="container5">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">Q.5: In Which Year Bootstrap Were Introduced</h5>
+            <div class="container p-4 ques5Container">
+                <div class="input1">
+                    <input type="radio" name="fifthQuestion" id="q5_opt1">
+                        <span style="margin-left: 3px;">
+                            Aug, 2011
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fifthQuestion" id="q5_opt2">
+                        <span style="margin-left: 3px;">
+                            July, 2011
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fifthQuestion" id="q5_opt3">
+                        <span style="margin-left: 3px;">
+                            Aug, 2010
+                        </span>
+                    </input>
+                </div><br>
+                <div class="input1">
+                    <input type="radio" name="fifthQuestion" id="q5_opt4">
+                        <span style="margin-left: 3px;">
+                            Nov, 2011
+                        </span>
+                    </input>
+                </div>    
+            </div>
+            <div class="container mt-5 text-right">
+                <button type="button" class="btn btn-outline-light" onclick="ques5Func()">Result</button>
+            </div>
+        </div>
+        <div class="container mt-5 container6" style="padding: 15px; display: none;" id="container6">
+            <h5 style="letter-spacing: 3px; word-spacing: 4px;">RESULT</h5>
+            
+        </div>
+    </div>
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+</body>
+</html>
